@@ -1,4 +1,4 @@
-# Section Header
+# Intermediate MPI Programming
 
 This section aims to inform users of...
 
@@ -13,3 +13,5 @@ This section aims to inform users of...
 - ...
 
 ---
+
+ Section contents.

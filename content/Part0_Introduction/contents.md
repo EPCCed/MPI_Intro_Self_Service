@@ -1,23 +1,39 @@
-# Message-Passing Programming with MPI
+# Overview
 
-This course aims to inform users of...
+The world’s largest supercomputers are used almost exclusively to run applications which are parallelised using the message passing programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.
+
+Parallel programming by definition involves co-operation between multiple processors to solve a common task. The programmer has to define the tasks that will be executed by the processors, and also how these tasks are to synchronise and exchange data with one another. In the message passing model the tasks are separate operating-system processes that communicate and synchronise by explicitly sending each other messages. All these parallel operations are performed via calls to some message-passing interface that is entirely responsible for interfacing with the physical communication network which actually links the processors together.
+
+This course uses the de facto standard for message passing, the Message Passing Interface (MPI), which comprises a library of functions. It covers point-to-point communication, non-blocking operations, derived datatypes, virtual topologies, collective communication and general design issues.
+
+This version of the course is designed for online self-study with all lectures pre-recorded. MPI is completely portable across all systems, so it can even be installed on your own laptop, but the exercises for this instance have been configured for the UK national supercomputers ARCHER2 and Cirrus. You will be provided with an account on one of these systems.
+
+This course is free to all academics.
 
 
+---
+
+## Learning Outcomes
+
+On completion of this course students should be able to:
+
+- Understand the message-passing model in detail
+- Implement standard message-passing algorithms in MPI
+- Debug simple MPI codes
+- Measure and comment on the performance of MPI codes
+- Design and implement efficient parallel programs to solve regular-grid problems
+
+
+## Prerequsites
 
 This course does have a couple of prerequisites in order to get the most out of the material:
 ```{prereq}
 
-   prerequisites
+   Experience programming in C, C++ or Fortran.
 
 ```
 
----
-
-## Objectives of this course
-
-- Objective A
-- Objective B
-- ...
+Note that the course does not cover the details of how to use MPI from Python.
 
 ---
 

@@ -1,4 +1,4 @@
-# Section Header
+# Point to Point Communication
 
 This section aims to inform users of...
 
@@ -13,3 +13,5 @@ This section aims to inform users of...
 - ...
 
 ---
+
+ Section contents
