@@ -1,4 +1,4 @@
-# Introduction to Course XYZ
+# Message-Passing Programming with MPI
 
 This course aims to inform users of...
 
@@ -57,5 +57,5 @@ We endeavour to maintain our position as a major provider of HPC training in Eur
 
 ## About {{ machine_name }}
 
-{{ '{include} ./../substitutions/substitutions_REPLACE/REPLACE_description.md\n'.replace("REPLACE",machine_name) }}
+{{ '{include} ../../substitutions/substitutions_REPLACE/REPLACE_description.md\n'.replace("REPLACE",machine_name) }}
 

@@ -5,3 +5,6 @@
 jupyter_execute
 .DS_Store
 .vscode/
+_build/
+sphinx/
+
