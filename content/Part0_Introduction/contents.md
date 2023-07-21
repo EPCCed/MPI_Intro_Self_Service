@@ -22,6 +22,9 @@ On completion of this course students should be able to:
 - Measure and comment on the performance of MPI codes
 - Design and implement efficient parallel programs to solve regular-grid problems
 
+Before starting the lecture material it is important that you obtain an account on one of the target HPC systems, ARCHER2 or Cirrus, and that you can log in. 
+This block also contains some information on options for viewing the videos which are hosted by the University of Edinburgh's Media Hopper Create service.
+
 
 ## Prerequisites
 
@@ -108,7 +111,7 @@ Note that this video itself is a screen capture with a single stream - having a 
 ---
 
 
-### Using the Command Line
+## Using the Command Line
 
 Hopefully, you have managed to log on to ARCHER2 without too much trouble. If this was your first experience using the terminal it is worth spending some time to familiarise yourself with it. At the very least, you should understand what the below commands do (try them on ARCHER2!) and be comfortable using them.
 
