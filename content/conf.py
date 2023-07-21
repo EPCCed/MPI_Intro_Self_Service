@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "ARCHER2 Online Course Template"
+project = "Introduction to MPI"
 copyright = "2023, EPCC at the University of Edinburgh"
 author = "Dr James Richings"
 github_user = "JPRichings"
