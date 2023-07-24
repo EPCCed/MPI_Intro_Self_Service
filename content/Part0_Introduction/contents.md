@@ -40,8 +40,8 @@ Note that the course does not cover the details of how to use MPI from Python.
 You will have been given instructions on how to obtain an ARCHER2 or Cirrus account after registering for the course.
 To connect to the EPCC systems for the practicals, participants must use a Mac, Linux, or Windows system (not a tablet, Chromebook, etc.). All attendees are also required to abide by the ARCHER2 Training [Code of Conduct](https://www.archer2.ac.uk/about/policies/code-of-conduct.html).
 
-Full instructions on how to log in to ARCHER2 are available in the [online ARCHER2 documentation](https://docs.archer2.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the [ARCHER2 helpdesk](support@archer2.ac.uk).
-Full instructions on how to log in to Cirrus are available in the online [Cirrus documentation](https://cirrus.readthedocs.io/en/main/user-guide/connecting.html). If you have any problems connecting then please contact the [Cirrus helpdesk](support@cirrus.ac.uk).
+Full instructions on how to log in to ARCHER2 are available in the [online ARCHER2 documentation](https://docs.archer2.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the ARCHER2 helpdesk (support@archer2.ac.uk).
+Full instructions on how to log in to Cirrus are available in the online [Cirrus documentation](https://cirrus.readthedocs.io/en/main/user-guide/connecting.html). If you have any problems connecting then please contact the Cirrus helpdesk (support@cirrus.ac.uk).
 
 
 ## Questionnaires
@@ -90,11 +90,6 @@ We endeavour to maintain our position as a major provider of HPC training in Eur
 
 ---
 
-## About {{ machine_name }}
-
-{{ '{include} ../../substitutions/substitutions_REPLACE/REPLACE_description.md\n'.replace("REPLACE",machine_name) }}
-
----
 
 ## Media Hopper Create
 
