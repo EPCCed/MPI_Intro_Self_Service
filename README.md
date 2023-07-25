@@ -1,22 +1,16 @@
-# How to use the repository
+# Introduction to Message Passing Programming with MPI
 
-This repo provides a template for developing sphinx based courses and deploying them using github pages.
+This repo provides materials introducing MPI (Message Passing Interface) and designed for self-study as part of ARCHER2 training.
 
-Detail on how to for setting up a local server and develop content can be founc in file `content/README.md`.
+It covers conceptual foundations of the message passing programming model and introduces basic and intermediate functions provided by MPI implementations. Practical experience can be gained by solving the provided exercises.
 
-## How this directory should be used
+Please don't forget to fill in the pre- and post-course questionnaires and the feedback form. The links can be found in the 'Overview' section of the materials..
 
-This repository has been set up to generate github pages website to display its content.
+Have fun!
 
-In order to seperate development and deployment of the repository we two branches have been setup in this template.
+## EPCC's Sphinx lesson template is used
 
-- develop branch: Recevices merge requests from users allowing for deveopment of webpages from multiple users.
+See https://github.com/EPCCed/Self\_Service\_Course\_template
 
-- deploy branch: The current live version of the webpage that should only take merge requests from the develop branch once a release is ready to be pushed to the live website.
+The template is inspired by the Coderefinery Sphinx template: https://github.com/coderefinery/sphinx-lesson
 
-
-## This is a template for writing Sphinx lessons developed for ARCHER2 and EPCC online material
-
-Uses the Coderefinery Sphinx template:
-
-https://github.com/coderefinery/sphinx-lesson
