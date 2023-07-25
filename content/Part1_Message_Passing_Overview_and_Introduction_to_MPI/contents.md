@@ -1,6 +1,6 @@
 # Introduction to the Message Passing Programming Model and MPI
 
-In this section, we first cover message-passing at a conceptual level, and illustrate the basic concepts using a traffic-modelling thought experiment. We then introduce the very basics of MPI and how to develop real MPI programs on ARCHER2 or Cirrus. This is enough information to write simple "Hello World" programs in MPI, and get to grips with compiling and running your own parallel programs. This block also includes the main [MPI Exercise Sheet](https://learn-eu-central-1-prod-fleet01-xythos.content.blackboardcdn.com/5d1b15b77a8ac/10690687?X-Blackboard-S3-Bucket=learn-eu-central-1-prod-fleet01-xythos&X-Blackboard-Expiration=1689940800000&X-Blackboard-Signature=WlhNL9BkPaiiBup%2FmGRizAUIVElD3VbxxeZ3hlQpA5w%3D&X-Blackboard-Client-Id=301835&X-Blackboard-S3-Region=eu-central-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27MPP-exercises.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaDGV1LWNlbnRyYWwtMSJHMEUCIARGwZydIL9bDYn%2BMqMbQIPg%2Bh%2F9lz%2F%2F3jusmuTeTlC3AiEAjoINEZnVrtLDv7UZB5VOH0B23zPF4X%2BRhim6OTkvFJYqxgUIuf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw2MzU1Njc5MjQxODMiDGH5CwddKLQjIlw%2B1SqaBVn%2BRAfc1VboU3ezLv%2FEwWOPWIlH6OS6gDauiXLalaoZPFczz0cwpvPIXlBt1Z34WLaUPE3LOGQFA8GT9wFW27VQXGUxYtUuNOP7vH33r%2Byns5ePE8%2BhvtV24%2BT3MNUAxvwRAfy2tjAo6VTGFWdcPkhjc7dCZ0Il1ppUL9d2zlWTYQXp1q6J8HJCA7oiFxXTtJjEffFhAD%2FOQR1NTWpKAxtYBpw36IjvKhlaKYAJ1x3UcEGz1aPCYj3hNe6u9cJKIrzX01gw%2FZziFX1C0OgLIEv8W4sEZhJ2sM92M90Gwjfy%2BHfVF0h9RoXo3L2wYWqDKiwLX7kHlQMKPew1Xk9p%2FF3RM0W2GMzHUqmnEyTUgKQbZbsQ1Rg1PBtUO4RCTz8iMlwc23vJMbEwY20mjpFSsKYDbjFrBSBIV2i9Ox7Wi%2FcgjqifDAOGKmpR7eGhoJXcDRod5AVfFp591kUNZyj6RY2VjOXiPZQHqz0I8YgPEnGtjI3Mor6xyhcUo8oSP8%2BCG7EEuWMr0Eyhwe1UMNqhP51tYHlDkw5SWPQHG%2F0PTU%2B8xGvujFVvv%2FyWZkMf%2BGAJM5vbNzUPvbt5OOjwhrooofDUdys2Ykc4Gf84pSbjiiRr2K7fzZW2ZFdmonhJGxiz3TxjBXIAjV54WarvUkYRubwzjr9EfQiJYW7w%2BbDFwvbo6vA%2BPgA6y0bXPnABPJaM0FUVfWRLeYgrh9pSinI9xRCrFcGdSO%2FL7dJuSVoDPfrw5cLCl83F%2BH9VBlKAnzBTBJA5pdE1089eWjTQBIyKCXuQGTs%2BIZpS3Ndwb9lzaFMD8ltRqlmbkePN1sS260I4643YkAyO5s4UpuFwogrsBaqiPph1kGEyUdIR8zZ%2FEu66mU4eAQgOqx3G6zDo6uilBjqxAUI1gf2VsjMEh4tal%2F0gtMW46QUYnzHrk5iSF%2FZwEPWFmBBei5CndC865T3IEOj33y6SZkkfzY4gyYdOKMdznnczryflmq%2Bv%2FEmU1DkYNOiBuQPbG8jKXuSEMy1SD8cBKy2BBIRIBzJt%2BDTPcsuKqdebVbFBLcVvKr46m54pbC3t8JgIojCJXSFWoGqYvIGv2t2xK7ceO4f8J3TCkTbZ8q56McsKNQPXzKFW9jrvw5CJog%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230721T060000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLRMBHRR7H%2F20230721%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=7ecc552df4ac4330b768ffaa1d8de1d0f6e758e1d4c222b51d803fb077cb1ea9) which we will use for the whole course, although only Exercise 1 is relevant here.
+In this section, we first cover message-passing at a conceptual level, and illustrate the basic concepts using a traffic-modelling thought experiment. We then introduce the very basics of MPI and how to develop real MPI programs on ARCHER2 or Cirrus. This is enough information to write simple "Hello World" programs in MPI, and get to grips with compiling and running your own parallel programs. This block also includes the main [MPI Exercise Sheet](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888441-dt-content-rid-20603993_1/xid-20603993_1) which we will use for the whole course, although only Exercise 1 is relevant here.
 
 
 ---
@@ -10,14 +10,14 @@ In this section, we first cover message-passing at a conceptual level, and illus
 After completing this section the student will gain:
 
 - a thorough understanding of the Message Passing programming model
-- familiarity with core function define by Message Passing Interface (MPI) standard
-- experience implementing, comiling, linking and running simple MPI programs
+- familiarity with the core functions defined by Message Passing Interface (MPI) standard
+- experience implementing, compiling, linking and running simple MPI programs
 
 ---
 
 ## Message Passing Programming Model
 
-This section discussed the message passing programming model and introduces various communication patterns at conceptual level (see [slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888447-dt-content-rid-20603988_1/xid-20603988_1)).
+This section discusses the message passing programming model and introduces various communication patterns at conceptual level (see [slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888447-dt-content-rid-20603988_1/xid-20603988_1)).
 
 
 ```{raw} html
@@ -44,10 +44,11 @@ This section discussed the message passing programming model and introduces vari
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/0_6iertyie?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=0_6iertyie&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_0574knep#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
+---
 
 ## Traffic Modelling
 
-This subsection cover the traffic modelling thought exercise ([lecture slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888450-dt-content-rid-20603986_1/xid-20603986_1), [exercise](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888451-dt-content-rid-20603987_1/xid-20603987_1), [solution](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888454-dt-content-rid-20603994_1/xid-20603994_1)).
+This subsection covers the traffic modelling thought exercise ([lecture slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888450-dt-content-rid-20603986_1/xid-20603986_1), [exercise](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888451-dt-content-rid-20603987_1/xid-20603987_1), [solution](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888454-dt-content-rid-20603994_1/xid-20603994_1)).
 
 
 ```{raw} html
@@ -69,14 +70,13 @@ This subsection cover the traffic modelling thought exercise ([lecture slides](h
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_3tye6090?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_3tye6090&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_j3qh2bgq#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
-```{raw} html
-<br>
-```
+---
+
 
 ## Introduction to MPI Programming
 
 
-This section introduces MPI programming and several core functions ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888457-dt-content-rid-20603989_1/xid-20603989_1)).
+This subsection introduces MPI programming and several core functions ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888457-dt-content-rid-20603989_1/xid-20603989_1)).
 
 
 ```{raw} html
@@ -100,6 +100,8 @@ Next videos cover running MPI programs on ARCHER2 and Cirrus ([slides](https://w
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_gbc2xd7q?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_gbc2xd7q&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_9veiwa9d#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
+---
+
 The next short video shows how to log on to ARCHER2, transfer files, and compile and run parallel programs.
 
 
@@ -113,3 +115,5 @@ The following short video shows how to log on to Cirrus, transfer files, and com
 ```{raw} html
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_4vv745wp?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_4vv745wp&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_570vnzcb#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
+
+---

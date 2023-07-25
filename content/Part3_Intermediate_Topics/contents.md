@@ -58,7 +58,7 @@ This section covers collective communication patterns such as _MPI\_Barrier_, _M
 
 ## Virtual Topologies
 
-This subsection cover creation and use of virtual topologies in MPI to simplify structured communication ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888489-dt-content-rid-20604102_1/xid-20604102_1)).
+This subsection covers creation and use of virtual topologies in MPI to simplify structured communication ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888489-dt-content-rid-20604102_1/xid-20604102_1)).
 
 
 ```{raw} html

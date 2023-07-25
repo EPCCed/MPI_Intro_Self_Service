@@ -19,9 +19,9 @@
 
 project = "Introduction to MPI"
 copyright = "2023, EPCC at the University of Edinburgh"
-author = "Dr James Richings"
-github_user = "JPRichings"
-github_repo_name = ""  # auto-detected from dirname if blank
+author = "EPCC"
+github_user = "EPCCed"
+github_repo_name = "MPI_Intro_Self_Service"  # auto-detected from dirname if blank
 github_version = "main"
 conf_py_path = "/content/"  # with leading and trailing slash
 

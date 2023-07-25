@@ -1,6 +1,6 @@
 # Case Study and Performance Metrics
 
-This section provies various tips and tricks for MPI programming along with a case study and discussess performance analysis that can be used to assess the scalability amd efficiency of your applications.
+This section provies various tips and tricks for MPI programming along with a case study and discusses performance analysis that can be used to assess the scalability and efficiency of your applications.
 
 
 ---
@@ -56,9 +56,9 @@ It is recommended to first attempt to write your own serial and parallel solutio
 
 ## Performance Metrics
 
-Performance and scalability are important to assess as a code that scales poorly won't be using larger machines efficiently.
+Performance and scalability are important to assess because a code that scales poorly won't be using larger machines efficiently.
 
-This subsection covers performance metrics (Speedup, Efficiency), strong and weak scaling, and also discusses Amdahl's law and Gustafson's law and how to visualise performance results ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888510-dt-content-rid-20604115_1/xid-20604115_1)).
+This subsection covers performance metrics (Speedup, Efficiency), strong and weak scaling, and also discusses Amdahl's Law and Gustafson's Law and how to visualise performance results ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888510-dt-content-rid-20604115_1/xid-20604115_1)).
 
 
 ```{raw} html
