@@ -97,5 +97,3 @@ This subsection covers derive datatypes, which facilitate communication of compo
 ```
 
 Simple example solutions using MPI in C and Fortran can be downloaded [here](https://www.learn.ed.ac.uk/bbcswebdav/pid-5894225-dt-content-rid-20813950_1/xid-20813950_1).
-
----

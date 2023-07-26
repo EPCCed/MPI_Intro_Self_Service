@@ -94,6 +94,3 @@ You have completed this MPI programming course!
 
 Please take a moment to complete the [post-course questionnaire](https://forms.office.com/r/aUth2aKHvD) and provide us some [feedback](https://www.archer2.ac.uk/training/feedback/?course=210000-mpi-self-service) to help improve this course. Note that the feedback form is designed to be anonymous, although you can leave your contact details if you wish. We use the same form for all training courses, so some questions (e.g. regarding the venue) may not be relevant. Thank you!
 
-
----
-
