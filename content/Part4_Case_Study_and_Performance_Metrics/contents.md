@@ -16,7 +16,7 @@ After completing this section the student will have:
 
 ## Tips and Tricks
  
-This subsection covers various aspects of MPI programming that will help write correct, portable, maintainable and efficient programs ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888501-dt-content-rid-20604114_1/xid-20604114_1)).
+This subsection covers various aspects of MPI programming that will help write correct, portable, maintainable and efficient programs ([slides](../slides/L12-tipsandtricks.pdf)).
 
 
 ```{raw} html
@@ -38,17 +38,17 @@ This subsection covers various aspects of MPI programming that will help write c
 
 ## Image Processing Case Study
 
-The following video describes the image processing case study ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888503-dt-content-rid-20799715_1/xid-20799715_1)).
+The following video describes the image processing case study ([slides](../slides/L11-casestudy.pdf)).
 
 ```{raw} html
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_gr97hjxg?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_gr97hjxg&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_iyzqpln8#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 Case study materials: 
--  [exercise description](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888504-dt-content-rid-20800766_1/xid-20800766_1)
--  [baseline code including helper functions](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888504-dt-content-rid-20800767_1/xid-20800767_1)
--  [example solution](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888504-dt-content-rid-20800768_1/xid-20800768_1)
--  [example of using arralloc function](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888504-dt-content-rid-20813961_1/xid-20813961_1)
+-  [exercise description](../exercises/MPP-casestudy.pdf)
+-  [baseline code including helper functions](../exercises/MPP-casestudy.tar)
+-  [example solution](../exercises/MPP-casesolns.tar)
+-  [example of using arralloc function](../exercises/MPP-arralloc.tar)
 
 It is recommended to first attempt to write your own serial and parallel solutions and then compare to the solutions provided. Note that Fortran supports dynamic array allocation as a language feature.
 
@@ -58,7 +58,7 @@ It is recommended to first attempt to write your own serial and parallel solutio
 
 Performance and scalability are important to assess because a code that scales poorly won't be using larger machines efficiently.
 
-This subsection covers performance metrics (Speedup, Efficiency), strong and weak scaling, and also discusses Amdahl's Law and Gustafson's Law and how to visualise performance results ([slides](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888510-dt-content-rid-20604115_1/xid-20604115_1)).
+This subsection covers performance metrics (Speedup, Efficiency), strong and weak scaling, and also discusses Amdahl's Law and Gustafson's Law and how to visualise performance results ([slides](../slides/L13-scaling.pdf)).
 
 
 ```{raw} html

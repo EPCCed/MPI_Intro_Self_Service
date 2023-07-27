@@ -122,6 +122,6 @@ Hopefully, you have managed to log on to ARCHER2 without too much trouble. If th
     grep
     man
 
-There is a lot of materials online on basic shell commands - feel free to use whichever you find the most useful. For an entertaining introduction to basic commands see Joe Topjian's book [Unix for the Beginning Mage](https://www.learn.ed.ac.uk/bbcswebdav/pid-5888440-dt-content-rid-20603984_1/xid-20603984_1). There is also material at the Software Carpentry site on using the Unix shell - [http://swcarpentry.github.io/shell-novice/](http://swcarpentry.github.io/shell-novice/). 
+There is a lot of materials online on basic shell commands - feel free to use whichever you find the most useful. For an entertaining introduction to basic commands see Joe Topjian's book [Unix for the Beginning Mage](../exercises/shell-tutorial.pdf). There is also material at the Software Carpentry site on using the Unix shell - [http://swcarpentry.github.io/shell-novice/](http://swcarpentry.github.io/shell-novice/). 
 
 
