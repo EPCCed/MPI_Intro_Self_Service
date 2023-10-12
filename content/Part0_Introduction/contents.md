@@ -76,16 +76,20 @@ This has been our mission for over 30 years as we strive to be the UK’s premie
 
 Our work is guided by key goals and objectives that support this mission and place EPCC at the heart of the Exascale era.
 
-Delivering world-class services
+**Delivering world-class services**
+
 We will continue to deliver world-class High Performance Computing (HPC) and data services to benefit our users and partners. As well as supporting businesses with our advanced computing facilities and capabilities.
 
-Leading data-driven innovation 
+**Leading data-driven innovation**
+ 
 We are a pivotal element in the success of the Edinburgh and South East Scotland City Region Deal and its Data-Driven Innovation initiative.
 
-Collaborating globally
+**Collaborating globally**
+
 We will continue to build and maintain collaborations and strong relationships with key organisations worldwide, undertaking globally-important computing research.
 
-Promoting teaching excellence
+**Promoting teaching excellence**
+
 We endeavour to maintain our position as a major provider of HPC training in Europe.
 
 ---
