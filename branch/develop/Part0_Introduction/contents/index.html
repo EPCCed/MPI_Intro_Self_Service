@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview &mdash; Introduction to MPI  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/epcc_logo.svg"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Introduction to the Message Passing Programming Model and MPI" href="../../Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/" />
+    <link rel="prev" title="Message-Passing Programming with MPI" href="../../" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../" class="icon icon-home">
+            Introduction to MPI
+              <img src="../../_static/epcc_logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-outcomes">Learning Outcomes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements-and-logging-in">Requirements and Logging In</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#questionnaires">Questionnaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feedback">Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-epcc">About EPCC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#media-hopper-create">Media Hopper Create</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-command-line">Using the Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/">Introduction to the Message Passing Programming Model and MPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part2_Point_to_Point_Communication/contents/">Point-to-Point Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part3_Intermediate_Topics/contents/">Intermediate MPI Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part4_Case_Study_and_Performance_Metrics/contents/">Case Study and Performance Metrics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Introduction to MPI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Overview</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/EPCCed/MPI_Intro_Self_Service/blob/main/content/Part0_Introduction/contents.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
+<p>The world’s largest supercomputers are used almost exclusively to run applications which are parallelised using the <em>message passing</em> programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.</p>
+<p>Parallel programming by definition involves co-operation between multiple processors to solve a common task. The programmer has to define the tasks that will be executed by the processors, and also how these tasks are to synchronise and exchange data with one another. In the message passing model the tasks are separate operating-system processes that <em>communicate</em> and <em>synchronise</em> by explicitly sending each other messages. All these parallel operations are performed via calls to some message-passing interface that is entirely responsible for interfacing with the physical communication network which actually links the processors together.</p>
+<p>This course uses the de facto standard for message passing, the <em>Message Passing Interface</em> (MPI), which comprises a library of functions. It covers point-to-point communication, non-blocking operations, derived datatypes, virtual topologies, collective communication and general design issues.</p>
+<p>This version of the course is designed for online self-study with all lectures pre-recorded. MPI is completely portable across all systems, so it can even be installed on your own laptop, but the exercises for this instance have been configured for the UK national supercomputers ARCHER2 and Cirrus. You will be provided with an account on one of these systems.</p>
+<p>This course is free to all academics.</p>
+<hr class="docutils" />
+<section id="learning-outcomes">
+<h2>Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Permalink to this heading"></a></h2>
+<p>On completion of this course students should be able to:</p>
+<ul class="simple">
+<li><p>Understand the message-passing model in detail</p></li>
+<li><p>Implement standard message-passing algorithms in MPI</p></li>
+<li><p>Debug simple MPI codes</p></li>
+<li><p>Measure and comment on the performance of MPI codes</p></li>
+<li><p>Design and implement efficient parallel programs to solve regular-grid problems</p></li>
+</ul>
+<p>Before starting the lecture material it is important that you obtain an account on one of the target HPC systems, ARCHER2 or Cirrus, and that you can log in.
+This block also contains some information on options for viewing the videos which are hosted by the University of Edinburgh’s Media Hopper Create service.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<p>This course has prerequisite for the students to get the most out of the material:</p>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>Experience programming in C, C++ or Fortran.</p>
+</div>
+<p>Note that the course does not cover the details of how to use MPI from Python.</p>
+</section>
+<section id="requirements-and-logging-in">
+<h2>Requirements and Logging In<a class="headerlink" href="#requirements-and-logging-in" title="Permalink to this heading"></a></h2>
+<p>You will have been given instructions on how to obtain an ARCHER2 or Cirrus account after registering for the course.
+To connect to the EPCC systems for the practicals, participants must use a Mac, Linux, or Windows system (not a tablet, Chromebook, etc.). All attendees are also required to abide by the ARCHER2 Training <a class="reference external" href="https://www.archer2.ac.uk/about/policies/code-of-conduct.html">Code of Conduct</a>.</p>
+<p>Full instructions on how to log in to ARCHER2 are available in the <a class="reference external" href="https://docs.archer2.ac.uk/user-guide/connecting/">online ARCHER2 documentation</a>. If you have any problems connecting then please contact the ARCHER2 helpdesk (support&#64;archer2.ac.uk).
+Full instructions on how to log in to Cirrus are available in the online <a class="reference external" href="https://cirrus.readthedocs.io/en/main/user-guide/connecting.html">Cirrus documentation</a>. If you have any problems connecting then please contact the Cirrus helpdesk (support&#64;cirrus.ac.uk).</p>
+</section>
+<section id="questionnaires">
+<h2>Questionnaires<a class="headerlink" href="#questionnaires" title="Permalink to this heading"></a></h2>
+<p>Before you begin this self-service course, we would be most grateful if you could complete this <a class="reference external" href="https://forms.office.com/r/gjT6ME4cmr">short pre-course questionnaire</a>.</p>
+<p>Once you have completed the course, please complete the <a class="reference external" href="https://forms.office.com/r/aUth2aKHvD">post-course questionnaire</a>.</p>
+</section>
+<section id="feedback">
+<h2>Feedback<a class="headerlink" href="#feedback" title="Permalink to this heading"></a></h2>
+<p>When you have finished the course, please fill in the <a class="reference external" href="https://www.archer2.ac.uk/training/feedback/?course=210000-mpi-self-service">Feedback Form</a>. This is designed to be anonymous, although you can leave your contact details if you wish. We use the same form for all training courses, so some questions (e.g. regarding the venue) may not be relevant.</p>
+<hr class="docutils" />
+<figure class="align-default">
+<img alt="../../_images/BayesInterior.jpg" src="../../_images/BayesInterior.jpg" />
+</figure>
+</section>
+<section id="about-epcc">
+<h2>About EPCC<a class="headerlink" href="#about-epcc" title="Permalink to this heading"></a></h2>
+<p>Since 1990, EPCC has developed a reputation for leading-edge capability in all aspects of High Performance Computing (HPC). Based at the University of Edinburgh, we work with industry, academia, public and third-sector organisations to promote the adoption and value of HPC.</p>
+<p>With a team of more than 110 highly qualified specialists, we have an exceptional pool of talent. Our engineers and technical staff have a powerful combination of practical and theoretical knowledge that keeps EPCC at the forefront of industry and research.</p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/NEgbVNIo560" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><p>EPCC aims to accelerate the effective exploitation of novel computing throughout industry, academia and commerce.</p>
+<p>This has been our mission for over 30 years as we strive to be the UK’s premier Supercomputing centre, renowned internationally for innovation and leading-edge research.</p>
+<p>Our work is guided by key goals and objectives that support this mission and place EPCC at the heart of the Exascale era.</p>
+<p><strong>Delivering world-class services</strong></p>
+<p>We will continue to deliver world-class High Performance Computing (HPC) and data services to benefit our users and partners. As well as supporting businesses with our advanced computing facilities and capabilities.</p>
+<p><strong>Leading data-driven innovation</strong></p>
+<p>We are a pivotal element in the success of the Edinburgh and South East Scotland City Region Deal and its Data-Driven Innovation initiative.</p>
+<p><strong>Collaborating globally</strong></p>
+<p>We will continue to build and maintain collaborations and strong relationships with key organisations worldwide, undertaking globally-important computing research.</p>
+<p><strong>Promoting teaching excellence</strong></p>
+<p>We endeavour to maintain our position as a major provider of HPC training in Europe.</p>
+</section>
+<hr class="docutils" />
+<section id="media-hopper-create">
+<h2>Media Hopper Create<a class="headerlink" href="#media-hopper-create" title="Permalink to this heading"></a></h2>
+<p>This short video shows you the different viewing options you have for the videos with multiple streams.</p>
+<p>Most of the lectures in the course have two streams - one for the slides and one for the camera - but some of the earlier lectures do not. Screen captures (e.g. recordings of coding sessions) also only have a single stream.</p>
+<p>Note that this video itself is a screen capture with a single stream - having a multi-stream video containing a demo of a multi-stream video would be rather unwieldy!</p>
+<iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_w169hu09?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_w169hu09&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_b0t8dczm#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<hr class="docutils" />
+<section id="using-the-command-line">
+<h2>Using the Command Line<a class="headerlink" href="#using-the-command-line" title="Permalink to this heading"></a></h2>
+<p>Hopefully, you have managed to log on to ARCHER2 without too much trouble. If this was your first experience using the terminal it is worth spending some time to familiarise yourself with it. At the very least, you should understand what the below commands do (try them on ARCHER2!) and be comfortable using them.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ls
+cd
+mkdir
+touch
+rm
+cp
+mv
+pwd
+find or locate
+grep
+man
+</pre></div>
+</div>
+<p>There is a lot of materials online on basic shell commands - feel free to use whichever you find the most useful. For an entertaining introduction to basic commands see Joe Topjian’s book <a class="reference download internal" download="" href="../../_downloads/fc3a48aee127fc7942acd52482e0e004/shell-tutorial.pdf"><span class="xref download myst">Unix for the Beginning Mage</span></a>. There is also material at the Software Carpentry site on using the Unix shell - <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">http://swcarpentry.github.io/shell-novice/</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../" class="btn btn-neutral float-left" title="Message-Passing Programming with MPI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/" class="btn btn-neutral float-right" title="Introduction to the Message Passing Programming Model and MPI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, EPCC at the University of Edinburgh.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

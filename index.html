@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message-Passing Programming with MPI &mdash; Introduction to MPI  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/epcc_logo.svg"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex/" />
+    <link rel="search" title="Search" href="search/" />
+    <link rel="next" title="Overview" href="Part0_Introduction/contents/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Introduction to MPI
+              <img src="_static/epcc_logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="Part0_Introduction/contents/">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/">Introduction to the Message Passing Programming Model and MPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/">Point-to-Point Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part3_Intermediate_Topics/contents/">Intermediate MPI Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/">Case Study and Performance Metrics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Introduction to MPI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Message-Passing Programming with MPI</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/EPCCed/MPI_Intro_Self_Service/blob/main/content/index.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="message-passing-programming-with-mpi">
+<h1>Message-Passing Programming with MPI<a class="headerlink" href="#message-passing-programming-with-mpi" title="Permalink to this heading"></a></h1>
+<section id="about-this-course">
+<h2>About this course<a class="headerlink" href="#about-this-course" title="Permalink to this heading"></a></h2>
+<p>The world’s largest supercomputers are used almost exclusively to run applications which are parallelised using the message passing programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.</p>
+<p>Parallel programming by definition involves co-operation between multiple processors to solve a common task. The programmer has to define the tasks that will be executed by the processors, and also how these tasks are to synchronise and exchange data with one another. In the message passing model the tasks are separate operating-system processes that communicate and synchronise by explicitly sending each other messages. All these parallel operations are performed via calls to some message-passing interface that is entirely responsible for interfacing with the physical communication network which actually links the processors together.</p>
+<p>This course uses the de facto standard for message passing, the Message Passing Interface (MPI), which comprises a library of functions. It covers point-to-point communication, non-blocking operations, derived datatypes, virtual topologies, collective communication and general design issues.</p>
+<p>This version of the course is designed for online self-study with all lectures pre-recorded. MPI is completely portable across all systems, so it can even be installed on your own laptop, but the exercises for this instance have been configured for the UK national supercomputers ARCHER2 and Cirrus. You will be provided with an account on one of these systems.</p>
+</section>
+<section id="who-is-the-course-for">
+<h2>Who is the course for?<a class="headerlink" href="#who-is-the-course-for" title="Permalink to this heading"></a></h2>
+<p>This course is primarily aimed at scientists, researchers, developers, students and academics who are interested in message passing programming using MPI and in running their applications on the UK national supercomputers ARCHER2 and Cirrus.</p>
+</section>
+<section id="course-contents">
+<h2>Course Contents<a class="headerlink" href="#course-contents" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Part0_Introduction/contents/">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#learning-outcomes">Learning Outcomes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#requirements-and-logging-in">Requirements and Logging In</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#questionnaires">Questionnaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#feedback">Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#about-epcc">About EPCC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#media-hopper-create">Media Hopper Create</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part0_Introduction/contents/#using-the-command-line">Using the Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/">Introduction to the Message Passing Programming Model and MPI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/#message-passing-programming-model">Message Passing Programming Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/#traffic-modelling">Traffic Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part1_Message_Passing_Overview_and_Introduction_to_MPI/contents/#introduction-to-mpi-programming">Introduction to MPI Programming</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/">Point-to-Point Communication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/#point-to-point-communication-and-mpi-functions">Point-to-Point Communication and MPI Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/#pi-calculation-exercise">Pi Calculation Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2_Point_to_Point_Communication/contents/#modes-tags-communicators">Modes, Tags, Communicators</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Part3_Intermediate_Topics/contents/">Intermediate MPI Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part3_Intermediate_Topics/contents/#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part3_Intermediate_Topics/contents/#non-blocking-communication">Non-Blocking Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part3_Intermediate_Topics/contents/#collectives">Collectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part3_Intermediate_Topics/contents/#virtual-topologies">Virtual Topologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part3_Intermediate_Topics/contents/#derived-datatypes">Derived Datatypes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/">Case Study and Performance Metrics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/#tips-and-tricks">Tips and Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/#image-processing-case-study">Image Processing Case Study</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part4_Case_Study_and_Performance_Metrics/contents/#performance-metrics">Performance Metrics</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Part0_Introduction/contents/" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, EPCC at the University of Edinburgh.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
