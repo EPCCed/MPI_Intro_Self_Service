@@ -15,7 +15,7 @@ Once this has been done, you should be sent an email. _If you have not received 
 ### Generate an SSH key pair and upload it to SAFE
 
 In addition to your password, you will need an SSH key pair to access Cirrus. There is useful guidance on how
-to generate SSH key pairs in [the Cirrus documentation](https://cirrus.readthedocs.io/en/master/user-guide/connecting.html).
+to generate SSH key pairs in [the Cirrus documentation]https://docs.cirrus.ac.uk/user-guide/connecting/#ssh-key-pairs).
 
 Once you have generated your key pair, you need to add the public part to your Cirrus account in SAFE:
 
@@ -28,7 +28,31 @@ Once you have generated your key pair, you need to add the public part to your C
 
 The public SSH key part will now be added to your login account on the Cirrus system.
 
+### Time-based one-time passcode (TOTP code)
+
+Remember, you will need to use both an SSH key and time-based one-time passcode (TOTP code) to log into Cirrus so you will also need to [set up a method for generating a TOTP code](https://epcced.github.io/safe-docs/safe-for-users/#how-to-turn-on-mfa-on-your-machine-account) before you can log into Cirrus.
 
 ### Log into Cirrus
 
-You should now be able to log into Cirrus by following the [login instructions in the Cirrus documentation](https://cirrus.readthedocs.io/en/master/user-guide/connecting.html).
+You should now be able to log into Cirrus by following the [login instructions in the Cirrus documentation](https://docs.cirrus.ac.uk/user-guide/connecting/#ssh-clients).
+
+E.g:
+
+```bash
+ssh username@login.cirrus.ac.uk
+```
+
+
+`````{note}
+
+If you are using Cirrus before you download the files you should move to the ``/work`` filesystem:
+
+```bash
+cd /work/[project code]/[group code]/[username]
+```
+
+The `/work` filesystem is a high performance parallel file system that can be accessed by both the frontend login nodes and the compute nodes. All jobs on Cirrus should be run from the `/work` file system. Cirrus compute nodes cannot access the `/home` file system at all. Any jobs attempting to use `/home` will fail with an error. 
+
+For more information the Cirrus documentation: https://docs.cirrus.ac.uk/user-guide/data/#cirrus-file-systems-and-storage](https://docs.cirrus.ac.uk/user-guide/data/#cirrus-file-systems-and-storage)
+
+``````
