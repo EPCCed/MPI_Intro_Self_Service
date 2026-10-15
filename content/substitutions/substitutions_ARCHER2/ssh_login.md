@@ -28,6 +28,9 @@ Once you have generated your key pair, you need to add the public part to your A
 
 The public SSH key part will now be added to your login account on the ARCHER2 system.
 
+### Time-based one-time passcode (TOTP code)
+
+Remember, you will need to use both an SSH key and time-based one-time passcode to log into ARCHER2 so you will also need to [set up a method for generating a TOTP code](https://epcced.github.io/safe-docs/safe-for-users/#how-to-turn-on-mfa-on-your-machine-account) before you can log into ARCHER2.
 
 ### Log into ARCHER2
 

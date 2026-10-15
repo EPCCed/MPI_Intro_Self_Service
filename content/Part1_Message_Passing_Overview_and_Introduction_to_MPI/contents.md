@@ -88,12 +88,15 @@ This subsection introduces MPI programming and several core functions ([slides](
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/0_c21vap59?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=0_c21vap59&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_uqd00t6i#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
 ```
 
-Next videos cover running MPI programs on ARCHER2 and Cirrus ([slides](../slides/L03-archer2-cirrus-mpi.pdf), [ARCHER2 notes](../exercises/ARCHER2-MPI-online-cribsheet.pdf), [Cirrus notes]../exercises/Cirrus-MPI-online-cribsheet.pdf)) and the first exercise ([exercise slides](../exercises/MPP-exercises.pdf), [code archive](../exercises/MPP-templates.tar)).
+For running MPI programs on ARCHER2 and Cirrus, see the ([slides](../slides/L03-archer2-cirrus-mpi.pdf), [ARCHER2 notes](../exercises/ARCHER2-MPI-online-cribsheet.pdf), [Cirrus notes](../exercises/Cirrus-MPI-online-cribsheet.pdf)) 
 
 
-```{raw} html
+<!-- ```{raw} html
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_umfdoth2?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_umfdoth2&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_4tgdelpv#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-```
+``` -->
+
+
+Next video covers the first exercise ([exercise slides](../exercises/MPP-exercises.pdf), [code archive](../exercises/MPP-templates.tar)).
 
 
 ```{raw} html
@@ -109,9 +112,9 @@ The next short video shows how to log on to ARCHER2, transfer files, and compile
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_slrvujkg?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_slrvujkg&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_lo305y3c#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
 ```
 
-The following short video shows how to log on to Cirrus, transfer files, and compile and run parallel programs.
+For instructions on logging on to Cirrus, transferring files, and compiling and running parallel programs, see the [Cirrus notes](../exercises/Cirrus-MPI-online-cribsheet.pdf).
 
-
+<!-- 
 ```{raw} html
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_4vv745wp?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_4vv745wp&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_570vnzcb#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-```
+``` -->
