@@ -2,7 +2,7 @@
 
 ## About this course
 
-The world’s largest supercomputers are used almost exclusively to run applications which are parallelised using the message passing programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.
+The world's largest supercomputers are used almost exclusively to run applications which are parallelised using the message passing programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.
 
 Parallel programming by definition involves co-operation between multiple processors to solve a common task. The programmer has to define the tasks that will be executed by the processors, and also how these tasks are to synchronise and exchange data with one another. In the message passing model the tasks are separate operating-system processes that communicate and synchronise by explicitly sending each other messages. All these parallel operations are performed via calls to some message-passing interface that is entirely responsible for interfacing with the physical communication network which actually links the processors together.
 

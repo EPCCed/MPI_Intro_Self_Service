@@ -4,7 +4,7 @@
 
 1. [Login to SAFE](https://safe.epcc.ed.ac.uk)
 2. Go to the Menu "Login accounts" and select "Request login account"
-3. Choose the `TODO` project “Choose Project for Machine Account” box and click "Next"
+3. Choose the `taXXX` project "Choose Project for Machine Account" box and click "Next"
 4. On the next page, the Cirrus system should be selected. Click "Next"
 5. Enter the username you would prefer to use on Cirrus. Every username must be unique, so if your chosen name is taken, you will need to choose another
 
@@ -45,13 +45,13 @@ ssh username@login.cirrus.ac.uk
 
 `````{note}
 
-If you are using Cirrus before you download the files you should move to the ``/work`` filesystem:
+If you are using Cirrus before you download the files you should move to the ``/epccfs`` filesystem:
 
 ```bash
-cd /work/[project code]/[group code]/[username]
+cd /epccfs/[projectcode]/[projectcode]/[username]
 ```
 
-The `/work` filesystem is a high performance parallel file system that can be accessed by both the frontend login nodes and the compute nodes. All jobs on Cirrus should be run from the `/work` file system. Cirrus compute nodes cannot access the `/home` file system at all. Any jobs attempting to use `/home` will fail with an error. 
+The `/epccfs` filesystem is a high performance parallel file system that can be accessed by both the frontend login nodes and the compute nodes. All jobs on Cirrus should be run from the `/epccfs` file system. Cirrus compute nodes cannot access the `/home` file system at all. Any jobs attempting to use `/home` will fail with an error. 
 
 For more information the Cirrus documentation: https://docs.cirrus.ac.uk/user-guide/data/#cirrus-file-systems-and-storage](https://docs.cirrus.ac.uk/user-guide/data/#cirrus-file-systems-and-storage)
 

@@ -1,6 +1,6 @@
 # Overview
 
-The world’s largest supercomputers are used almost exclusively to run applications which are parallelised using the *message passing* programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.
+The world's largest supercomputers are used almost exclusively to run applications which are parallelised using the *message passing* programming model. This course covers all the basic knowledge required to write parallel programs using this programming model, and is directly applicable to almost every parallel computer architecture.
 
 Parallel programming by definition involves co-operation between multiple processors to solve a common task. The programmer has to define the tasks that will be executed by the processors, and also how these tasks are to synchronise and exchange data with one another. In the message passing model the tasks are separate operating-system processes that *communicate* and *synchronise* by explicitly sending each other messages. All these parallel operations are performed via calls to some message-passing interface that is entirely responsible for interfacing with the physical communication network which actually links the processors together.
 
@@ -38,14 +38,14 @@ Note that the course does not cover the details of how to use MPI from Python.
 ## Requirements and Logging In
 
 You will have been given instructions on how to obtain an ARCHER2 or Cirrus account after registering for the course.
-To connect to the EPCC systems for the practicals, participants must use a Mac, Linux, or Windows system (not a tablet, Chromebook, etc.). All attendees are also required to abide by the ARCHER2 Training [Code of Conduct](https://www.archer2.ac.uk/about/policies/code-of-conduct.html).
+To connect to the EPCC systems for the practicals, participants must use a Mac, Linux, or Windows system (not a tablet, Chromebook, etc.). All attendees are also required to abide by the [ARCHER2  Code of Conduct](https://www.archer2.ac.uk/about/policies/code-of-conduct.html).
 
-Full instructions on how to log in to ARCHER2 are available in the [online ARCHER2 documentation](https://docs.archer2.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the ARCHER2 helpdesk (support@archer2.ac.uk).
-Full instructions on how to log in to Cirrus are available in the online [Cirrus documentation](https://docs.cirrus.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the Cirrus helpdesk (support@cirrus.ac.uk).
+Full instructions on how to log in to ARCHER2 are available in the online [ARCHER2 documentation](https://docs.archer2.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the [ARCHER2 Service Desk](https://www.archer2.ac.uk/support-access/servicedesk.html).
+Full instructions on how to log in to Cirrus are available in the online [Cirrus documentation](https://docs.cirrus.ac.uk/user-guide/connecting/). If you have any problems connecting then please contact the [Cirrus Service Desk](https://www.cirrus.ac.uk/support-access/user-support/).
 
 
 ## Questionnaires
-Before you begin this self-service course, we would be most grateful if you could complete this [short pre-course questionnaire](https://forms.office.com/r/gjT6ME4cmr). 
+Before you begin this self-service course, we would be most grateful if you could complete this [short pre-course questionnaire](https://forms.office.com/r/gjT6ME4cmr).
 
 Once you have completed the course, please complete the [post-course questionnaire](https://forms.office.com/r/aUth2aKHvD).
 
@@ -100,9 +100,9 @@ We endeavour to maintain our position as a major provider of HPC training in Eur
 
 This short video shows you the different viewing options you have for the videos with multiple streams.
 
-Most of the lectures in the course have two streams - one for the slides and one for the camera - but some of the earlier lectures do not. Screen captures (e.g. recordings of coding sessions) also only have a single stream.
+Most of the lectures in the course have two streams&mdash;one for the slides and one for the camera&mdash;but some of the earlier lectures do not. Screen captures (e.g., recordings of coding sessions) also only have a single stream.
 
-Note that this video itself is a screen capture with a single stream - having a multi-stream video containing a demo of a multi-stream video would be rather unwieldy!
+Note that this video itself is a screen capture with a single stream&mdash;having a multi-stream video containing a demo of a multi-stream video would be rather unwieldy!
 
 ```{raw} html
 <iframe width="700" height="400" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/2010292/uiconf_id/32599141/entry_id/1_w169hu09?wid=_2010292&iframeembed=true&playerId=kaltura_player&entry_id=1_w169hu09&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_b0t8dczm#" title="Kaltura video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -128,6 +128,4 @@ Hopefully, you have managed to log on to ARCHER2 without too much trouble. If th
     grep
     man
 
-There is a lot of materials online on basic shell commands - feel free to use whichever you find the most useful. For an entertaining introduction to basic commands see Joe Topjian's book [Unix for the Beginning Mage](../exercises/shell-tutorial.pdf). There is also material at the Software Carpentry site on using the Unix shell - [http://swcarpentry.github.io/shell-novice/](http://swcarpentry.github.io/shell-novice/). 
-
-
+There is a lot of materials online on basic shell commands - feel free to use whichever you find the most useful. For an entertaining introduction to basic commands see Joe Topjian's book [Unix for the Beginning Mage](../exercises/shell-tutorial.pdf). There is also material at the Software Carpentry site on using [The Unix Shell](http://swcarpentry.github.io/shell-novice/).

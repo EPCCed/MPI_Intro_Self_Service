@@ -1,6 +1,6 @@
 # Point-to-Point Communication
 
-In this section we cover the basics of point-to-point message passing in MPI, and explain how the concepts of synchronous and asynchronous communication map to the specific MPI routines _Ssend_, _Bsend_ and _Send_. The exercises associated with this block are numbers 2, 3 and 4.
+In this section we cover the basics of point-to-point message passing in MPI, and explain how the concepts of synchronous and asynchronous communication map to the specific MPI routines `Ssend`, `Bsend` and `Send`. The exercises associated with this block are numbers 2, 3 and 4.
 
 ---
 

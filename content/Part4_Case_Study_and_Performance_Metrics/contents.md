@@ -1,6 +1,6 @@
 # Case Study and Performance Metrics
 
-This section provies various tips and tricks for MPI programming along with a case study and discusses performance analysis that can be used to assess the scalability and efficiency of your applications.
+This section provides various tips and tricks for MPI programming along with a case study and discusses performance analysis that can be used to assess the scalability and efficiency of your applications.
 
 
 ---
